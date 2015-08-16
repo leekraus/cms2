@@ -1,0 +1,30 @@
+<h1>Demo#hello</h1>
+<p>Hello World</p>
+
+<%=1+1%>
+<br />
+
+<% target = "world" %>
+<%= "Hello #{target}" %>
+
+<br />
+
+<% @array.each do |n| %>
+<%= n %> <br />
+<% end %>
+
+<br />
+<%= link_to('Index page 1', {:action => 'index'}) %>
+
+<br />
+ID: <%= params[:id] %> <br />
+ID: <%= @id %> <br />
+Next Page: <%= @page + 1 %> <br />
+
+<p>
+This is the hello page. You will be able to build from here.
+</p>
+
+
+<hr />
+<%= params.inspect %>
