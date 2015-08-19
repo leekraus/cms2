@@ -7,7 +7,7 @@ class SubjectsController < ApplicationController
   end
 
   def show
-  	@Subject = Subject.find(params[:id])
+  	@subject = Subject.find(params[:id])
   end
 
   def new
@@ -29,12 +29,12 @@ class SubjectsController < ApplicationController
 
 
   def edit
-    @Subject = Subject.find(params[:id])
+    @subject = Subject.find(params[:id])
   end
 
   def update
    # Find aa existing object form parameters
-   @Subject = Subject.find(params[:id])
+   @subject = Subject.find(params[:id])
   
    # Update the object
    if @subject.update_attributes(subject_params)
